@@ -11,6 +11,8 @@ const totalEl = document.getElementById("running-total");
 // Event Listeners
 document.getElementById("plus-button").addEventListener("click", handlePlusClick);
 document.getElementById("minus-button").addEventListener("click", handleMinusClick);
+// document.getElementById("plus-button").addEventListener("hover", inverseMinusColors);
+// document.getElementById("minus-button").addEventListener("hover", inversePlusColors);
 
 // Functions
 function init() {
@@ -43,6 +45,19 @@ function handleMinusClick() {
   runningTotal -= (input1Value);
   render();
 }
+// function inversePlusButtonColors() {
+//     var plusButton = document.getElementById("plus-button");
+//     plusButton.style.color = 'grey';
+//     plusButton.style.backgroundColor = "white";
+// }
+
+// function inverseMinusButtonColors() {
+//   var minusButton = document.getElementById("minus-button");
+//   minusButton.style.color = 'grey';
+//   minusButton.style.backgroundColor = "white";
+// }
+
+
 
 
 
