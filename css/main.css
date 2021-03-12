@@ -1,13 +1,13 @@
 html, body {
-  height: 100%;
+  height: 60%;
 }
 html, * {
   box-sizing: border-box;
   outline: none;
 }
-* {
+/* * {
   font-size: 20px;
-}
+} */
 body {
   display: flex;
   flex-direction: column;
@@ -15,17 +15,45 @@ body {
   align-items: center;
   margin: 10px 0;
 }
-button, input {
+button {
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid grey;
+  border: 4px solid rgb(169,169,169);
+  font-size: 100px;
+  width: auto;
+  height: auto;
+  color: white;
+  background-color: rgb(169,169,169);
 }
+
+section {
+  display: flex;  /* defaults to row layout */
+  justify-content: center;  /* centers items horizontally in row layout */
+  align-items: center;  /* centers vertically in row layout */
+  /* flex-direction: column; will set layout to column instead of row */
+}
+
+#running-total {
+  font-size: 100px;
+  font-weight: normal;
+}
+
+input {
+  margin: 0 10px 0 10px;
+  width: auto;
+  height: auto;
+  font-size: 80px;
+  padding: 10px;
+  border: 5px solid rgb(169,169,169);  
+  border-radius: 7%;
+}
+
 button:hover {
   cursor: pointer;
 }
 h1 {
   margin: 0;
 }
-:+1:
-11
-  
+
+/* :+1:
+11  */
